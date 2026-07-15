@@ -1,10 +1,10 @@
 @description('Name of the managed disk to be copied')
-param managedDiskName string = 'diskname'
+param managedDiskName string = 'az104-disk5'
 
 @description('Disk size in GiB')
 @minValue(4)
 @maxValue(65536)
-param diskSizeinGiB int = 8
+param diskSizeinGiB int = 32
 
 @description('Disk IOPS value')
 @minValue(100)
@@ -23,7 +23,7 @@ resource managedDisk 'Microsoft.Compute/disks@2020-09-30' = {
   name: managedDiskName
   location: location
   sku: {
-    name: 'UltraSSD_LRS'
+    name: 'Standard_LRS'
   }
   properties: {
     creationData: {
