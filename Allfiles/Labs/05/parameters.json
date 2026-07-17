@@ -1,0 +1,69 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "subnetName": {
+            "value": "SensorSubnet1"
+        },
+        "virtualNetworkName": {
+            "value": "ManufacturingVnet"
+        },
+        "networkInterfaceName": {
+            "value": "manufacturingservicesvm181"
+        },
+        "enableAcceleratedNetworking": {
+            "value": true
+        },
+        "networkSecurityGroupName": {
+            "value": "manufacturingservicesvm-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": []
+        },
+        "virtualMachineName": {
+            "value": "manufacvm"
+        },
+        "virtualMachineComputerName": {
+            "value": "manufacvm"
+        },
+        "virtualMachineRG": {
+            "value": "az104-rg5"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v7"
+        },
+        "osDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "diskControllerType": {
+            "value": "NVMe"
+        },
+        "nicDeleteOption": {
+            "value": "Detach"
+        },
+        "adminUsername": {
+            "value": "localadmin"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enablePeriodicAssessment": {
+            "value": "ImageDefault"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "hibernationEnabled": {
+            "value": false
+        }
+    }
+}
